@@ -1,0 +1,53 @@
+@import url("https://p.typekit.net/p.css?s=1&k=fxz4xvh&ht=tk&f=551.13407&a=77890515&app=typekit&e=css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'roboto-slab';
+    src: url('/public/fonts/RobotoSlab-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family:"tachyon";
+    src:url("https://use.typekit.net/af/5faadb/000000000000000077359706/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5faadb/000000000000000077359706/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5faadb/000000000000000077359706/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background: #F9E574;
+    background: -webkit-linear-gradient(120deg, #F9E574 5%, #ffffff 100%);
+    background: linear-gradient(120deg, #F9E574 5%, #ffffff 100%);
+}
+
+h1, h2, h3, #footer, #mainMenu {
+    font-family: 'Tachyon', sans-serif;
+}
+
+p {
+    font-family: roboto-slab, sans-serif;
+}
+
+button {
+    background-color: #FFA610;
+    border-radius: 10px;
+}
+#maintenance, #telephonie, #cyber, #materiel {
+    /* From https://css.glass */
+    background: rgba(158, 151, 151, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(158, 151, 151, 0.3);
+}
+
