@@ -1,14 +1,14 @@
+
 import * as React from 'react';
 import {Header} from "../../Components/Header";
 import Head from "next/head";
 import {Footer} from "../../Components/Footer";
 
-
- function Maintenance() {
+ function Logiciels() {
     return (
         <div className="body">
             <Head>
-                <title>Azzu informatique - Maintenance</title>
+                <title>Azzu informatique - Les logiciels</title>
             </Head>
             <Header/>
             <div className="h-screen">
@@ -17,5 +17,5 @@ import {Footer} from "../../Components/Footer";
             <Footer/>
         </div>
     );
-};
- export default Maintenance
+}
+export default Logiciels

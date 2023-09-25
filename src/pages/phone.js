@@ -12,6 +12,7 @@ import {Footer} from "../../Components/Footer";
                 <title>Azzu informatique - Téléphonie</title>
             </Head>
             <Header/>
+            <p>phone OK</p>
             <div className="h-screen">
 
             </div>

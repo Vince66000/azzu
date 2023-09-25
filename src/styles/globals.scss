@@ -1,7 +1,7 @@
-@import url("https://p.typekit.net/p.css?s=1&k=fxz4xvh&ht=tk&f=551.13407&a=77890515&app=typekit&e=css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @font-face {
     font-family: 'roboto-slab';
@@ -25,8 +25,8 @@
 
 .body {
     background: #F9E574;
-    background: -webkit-linear-gradient(120deg, #F9E574 5%, #ffffff 100%);
-    background: linear-gradient(120deg, #F9E574 5%, #ffffff 100%);
+    background: -webkit-linear-gradient(120deg, #93B3F4 20%, #ffffff 100%);
+    background: linear-gradient(120deg, #93B3F4 20%, #ffffff 100%);
 }
 
 h1, h2, h3, #footer, #mainMenu {
@@ -37,17 +37,37 @@ p {
     font-family: roboto-slab, sans-serif;
 }
 
-button {
+.btn {
     background-color: #FFA610;
     border-radius: 10px;
 }
+
+
+#hero {
+
+    animation: FadeInHero .5s  ease-in-out forwards;
+
+}
+
+@keyframes FadeInHero {
+    0% {
+        transform: translateX(-70%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
 #maintenance, #telephonie, #cyber, #materiel {
     /* From https://css.glass */
     background: rgba(158, 151, 151, 0.15);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px #93B3F4;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     border: 1px solid rgba(158, 151, 151, 0.3);
 }
 

@@ -4,7 +4,7 @@ import {Header} from "../../Components/Header";
 import Head from "next/head";
 import {Footer} from "../../Components/Footer";
 
-function Values() {
+function Valeurs() {
     return (
         <div className="body">
             <Head>
@@ -18,4 +18,4 @@ function Values() {
         </div>
     );
 }
-export default Values
+export default Valeurs

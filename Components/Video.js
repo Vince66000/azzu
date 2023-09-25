@@ -1,8 +1,10 @@
 import * as React from 'react';
 import dynamic from 'next/dynamic';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import {lazy} from "react";
 
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false})
+// const ReactPlayer = lazy(() => import('react-player/lazy'))
 
  function Video() {
     return (

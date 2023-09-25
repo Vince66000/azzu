@@ -12,55 +12,56 @@ function Home() {
         <div className="body">
             <Header/>
             <Video/>
-            <div className="w-full flex flex-col md:flex-row justify-center my-auto py-10">
+            <div id="hero" className="w-full flex flex-col md:flex-row justify-center my-auto py-10">
                 <div className="w-full md:w-1/3 flex flex-col justify-center">
-                    <h1 className="text-center md:text-3xl ">Changez votre vision de l'informatique d'entreprise</h1>
+                    <h1 className=" text-center md:text-3xl ">Changez votre vision de l'informatique d'entreprise</h1>
                     <p className="w-10/12 text-xl m-auto text-center md:text-left">Fort de plus de 15 ans d’expérience dans le domaine, nous sommes convaincus que l’informatique ne doit pas être
                         une source de stress pour les entreprises, mais plutôt un outil efficace pour leur développement.</p>
                     <div className="m-auto p-5">
-                        <button className="px-4 py-3 ">Découvrez l'univers d'Azzu informatique</button>
+                        <button className="btn px-4 py-3 ">Découvrez l'univers d'Azzu informatique</button>
                     </div>
                 </div>
                 <Player className="md:hidden"
-                    autoplay
-                    loop
-                    src='https://assets8.lottiefiles.com/packages/lf20_itbfc45d.json'
-                    style={{ height: '200px', width: '200px' }}>
+                        autoplay
+                        loop
+                        src='https://assets8.lottiefiles.com/packages/lf20_itbfc45d.json'
+                        style={{ height: '200px', width: '200px' }}>
                 </Player>
-                <Player className=""
+                <Player id="image"
+                        className=""
                         autoplay
                         loop
                         src='https://assets8.lottiefiles.com/packages/lf20_itbfc45d.json'
                         style={{ height: '400px', width: '400px' }}>
                 </Player>
             </div>
-            <div className="flex flex-col justify-center mx-auto text-center space-y-4 w-6/12 md:space-y-0 md:flex-row md:w-7/12 md:space-x-2" >
+            <div className="flex flex-col justify-center mx-auto text-center space-y-4 w-96 md:space-y-0 md:flex-row md:w-[50rem] md:space-x-2" >
                 <div className="w-full bg-gray-300 rounded-xl" id="maintenance">
                     <h2 className="text-xl md:text-xl text-center">Gestion et maintenance</h2>
                     <p className="p-4 pb-16 text-lg">Gestion de parc informatique simplifiée. Maîtrisez votre infrastructure, optimisez vos ressources.</p>
                     <div className="p-4">
-                        <button className="absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
+                        <button className="btn absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
                     </div>
                 </div>
                 <div className="w-full bg-gray-300 rounded-xl" id="materiel">
                     <h2  className="text-xl md:text-xl text-center">Vente de matériel </h2>
                     <p  className="p-4 pb-16 text-lg">Matériel informatique de qualité et expertise assurée : choisissez Azzu. Optimisez votre équipement, boostez votre productivité.</p>
                     <div className="p-4">
-                        <button className="absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
+                        <button className="btn absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
                     </div>
                 </div>
                 <div  className="w-full bg-gray-300 rounded-xl" id="cyber">
                     <h2 className="text-xl md:text-xl text-center"> logiciel et sécurité</h2>
                     <p className="p-4 pb-16 text-lg">Cybersécurité et logiciels : la combinaison parfaite avec Azzu informatique. Protégez vos données, optimisez vos performances.</p>
                     <div className="p-4">
-                        <button className="absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
+                        <button className="btn absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
                     </div>
                 </div>
                 <div  className="w-full bg-gray-300 rounded-xl" id="telephonie">
                     <h2  className="text-xl lg:text-xl text-center">Téléphonie</h2>
                     <p  className="p-4 pb-16 text-lg">Téléphonie professionnelle optimisée avec Azzu. Communiquez efficacement, boostez vos collaborations.</p>
                     <div className="p-4">
-                        <button className="absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
+                        <button className="btn absolute inset-x-8 bottom-4 px-4 py-2 m-auto">Découvrir</button>
                     </div>
                 </div>
             </div>
@@ -82,9 +83,9 @@ function Home() {
             </div>
             <h2 className="text-center p-4">Nos valeurs</h2>
             <div className="w-10/12 flex flex-col m-auto  items-center space-y-2 p-4">
-                    <h3>Honnêteté</h3>
-                    <h3>Efficacité</h3>
-                    <h3>Transparence</h3>
+                <h3>Honnêteté</h3>
+                <h3>Efficacité</h3>
+                <h3>Transparence</h3>
             </div>
             <h2 className="text-lg text-center pb-8 lg:text-2xl">Ensemble, changeons votre vision de l'informatique d'entreprise</h2>
             <div className="w-full p-4 md:w-2/3 m-auto ">
@@ -95,6 +96,6 @@ function Home() {
             </div>
             <Footer/>
         </div>
-)
+    )
 }
 export default Home

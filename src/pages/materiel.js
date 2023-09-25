@@ -6,7 +6,7 @@ import {Footer} from "../../Components/Footer";
 
 
 
-function Hardware() {
+function Materiel() {
     return (
         <div className="body">
             <Head>
@@ -20,4 +20,4 @@ function Hardware() {
         </div>
     );
 }
-export default Hardware
+export default Materiel
